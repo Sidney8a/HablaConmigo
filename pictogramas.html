@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png">
+    <title>PICTOGRAMAS</title>
+
+    <link rel="stylesheet" href="css/estilos.css" type="text/css" >
+    <script src="https://kit.fontawesome.com/636c88d244.js" crossorigin="anonymous"></script>
+    
+</head>
+<body id="body">
+    <header>
+        <div class="icon_menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+    </header>
+
+    <div class="menu__side" id="menu_side">
+
+        <div class="name__page">
+          <i class="fa-solid fa-hands-asl-interpreting"></i>
+          <h4>HABLA CONMIGO</h4>
+        </div>
+
+        <div class="options__menu">
+            <a href="index.html" class="select">
+                <div class="option">
+                    <i class="fas fa-home" title="Inicio"></i>
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+
+            <a href="lenguaje.html">
+                <div class="option">
+                    <i class="fa-solid fa-hands" title="Lenguaje de Señas"></i>
+                    <h4>Lengua de Señas</h4>
+                </div>
+            </a>
+
+            <a href="pictogramas.html">
+                <div class="option">
+                    <i class="fa-regular fa-image" title="Pictogramas"></i>
+                    <h4>Pictogramas</h4>
+                </div>
+            </a>
+
+            <a href="teguiamos.html">
+                <div class="option">
+                    <i class="fa-solid fa-info" title="Te Guiamos"></i>
+                    <h4>Te Guiamos</h4>
+                </div>
+            </a>
+
+            <a href="nosotros.html">
+                <div class="option">
+                    <i class="fa-solid fa-users" title="Nosotros"></i>
+                    <h4>Nosotros</h4>
+                </div>
+            </a>
+        </div>
+
+    </div>
+    <main>
+        <main>
+            <div class="container">
+                <h1>PICTOGRAMAS</h1> 
+            </div><br>
+
+            <div>
+                <h5>.</h5>
+                <h2>Sentimientos</h2>   
+            </div>
+    
+        <br><div class="galeria">
+            
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/feliz.jpg"><br>
+            
+                <center><button class="reproductorfeliz">Feliz</button></center>
+                <audio src="./sonidos/feliz.mp3"></audio>
+            
+                <script>
+                    let botonfeliz = document.querySelector(".reproductorfeliz")
+                    let audioEtiquetafeliz = document.querySelector("audio")
+    
+                     botonfeliz.addEventListener("click", () => {
+                        audioEtiquetafeliz.setAttribute("src", "./sonidos/feliz.mp3")
+                        audioEtiquetafeliz.play()
+                    })
+                </script><br>   
+            </div>
+    
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/triste.png"><br>
+    
+                <center><button class="reproductortriste">Triste</button></center>
+                <audio src="./sonidos/triste.mp3"></audio>
+            
+                <script>
+                    let botontriste = document.querySelector(".reproductortriste")
+                    let audioEtiquetatriste = document.querySelector("audio")
+    
+                     botontriste.addEventListener("click", () => {
+                        audioEtiquetatriste.setAttribute("src", "./sonidos/triste.mp3")
+                        audioEtiquetatriste.play()
+                    })
+                </script>   
+            </div>
+    
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/contento.jpg"><br>
+                
+                <center><button class="reproductorcontento">Contento</button></center>
+                <audio src="./sonidos/contento.mp3"></audio>
+            
+                <script>
+                    let botoncontento = document.querySelector(".reproductorcontento")
+                    let audioEtiquetacontento = document.querySelector("audio")
+    
+                     botoncontento.addEventListener("click", () => {
+                        audioEtiquetacontento.setAttribute("src", "./sonidos/contento.mp3")
+                        audioEtiquetacontento.play()
+                    })
+                </script>   
+            </div>
+    
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/asombrado.png"><br>
+                
+                <center><button class="reproductorasombrado">Asombrado</button></center>
+                <audio src="./sonidos/asombrado.mp3"></audio>
+            
+                <script>
+                    let botonasombrado = document.querySelector(".reproductorasombrado")
+                    let audioEtiquetaasombrado = document.querySelector("audio")
+    
+                     botonasombrado.addEventListener("click", () => {
+                        audioEtiquetaasombrado.setAttribute("src", "./sonidos/asombrado.mp3")
+                        audioEtiquetaasombrado.play()
+                    })
+                </script>    
+            </div>
+    
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/molesto.jpg"><br>
+                
+                <center><button class="reproductormolesto">Molesto</button></center>
+                <audio src="./sonidos/molesto.mp3"></audio>
+            
+                <script>
+                    let botonmolesto = document.querySelector(".reproductormolesto")
+                    let audioEtiquetamolesto = document.querySelector("audio")
+    
+                     botonmolesto.addEventListener("click", () => {
+                        audioEtiquetamolesto.setAttribute("src", "./sonidos/molesto.mp3")
+                        audioEtiquetamolesto.play()
+                    })
+                </script>   
+            </div>
+    
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/confundido.png"><br>
+                
+                <center><button class="reproductorconfundido">Confundido</button></center>
+                <audio src="./sonidos/confundido.mp3"></audio>
+            
+                <script>
+                    let botonconfundido = document.querySelector(".reproductorconfundido")
+                    let audioEtiquetaconfundido = document.querySelector("audio")
+    
+                     botonconfundido.addEventListener("click", () => {
+                        audioEtiquetaconfundido.setAttribute("src", "./sonidos/confundido.mp3")
+                        audioEtiquetaconfundido.play()
+                    })
+                </script>   
+            </div>
+    
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/enamorados.jpg"><br>
+                
+                <center><button class="reproductorenamorados">Enamorado</button></center>
+                <audio src="./sonidos/enamorados.mp3"></audio>
+            
+                <script>
+                    let botonenamorados = document.querySelector(".reproductorenamorados")
+                    let audioEtiquetaenamorados = document.querySelector("audio")
+    
+                     botonenamorados.addEventListener("click", () => {
+                        audioEtiquetaenamorados.setAttribute("src", "./sonidos/enamorados.mp3")
+                        audioEtiquetaenamorados.play()
+                    })
+                </script>   
+            </div>
+    
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/aburrido.png"><br>
+                
+                <center><button class="reproductoraburrido">Aburrido</button></center>
+                <audio src="./sonidos/aburrido.mp3"></audio>
+            
+                <script>
+                    let botonaburrido = document.querySelector(".reproductoraburrido")
+                    let audioEtiquetaaburrido = document.querySelector("audio")
+    
+                     botonaburrido.addEventListener("click", () => {
+                        audioEtiquetaaburrido.setAttribute("src", "./sonidos/aburrido.mp3")
+                        audioEtiquetaaburrido.play()
+                    })
+                </script>   
+            </div>
+        
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/calor.png"><br>
+               
+                <center><button class="reproductorcalor">Calor</button></center>
+                <audio src="./sonidos/calor.mp3"></audio>
+            
+                <script>
+                    let botoncalor = document.querySelector(".reproductorcalor")
+                    let audioEtiquetacalor = document.querySelector("audio")
+    
+                     botoncalor.addEventListener("click", () => {
+                        audioEtiquetacalor.setAttribute("src", "./sonidos/calor.mp3")
+                        audioEtiquetacalor.play()
+                    })
+                </script>   
+            </div>
+            
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/frio.png"><br>
+                
+                <center><button class="reproductorfrio">Frio</button></center>
+                <audio src="./sonidos/frio.mp3"></audio>
+            
+                <script>
+                    let botonfrio = document.querySelector(".reproductorfrio")
+                    let audioEtiquetafrio = document.querySelector("audio")
+    
+                     botonfrio.addEventListener("click", () => {
+                        audioEtiquetafrio.setAttribute("src", "./sonidos/frio.mp3")
+                        audioEtiquetafrio.play()
+                    })
+                </script> 
+            </div>
+    
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/hambre.jpg"><br>
+                
+               <center><button class="reproductorhambre">Hambre</button></center> 
+                <audio src="./sonidos/hambre.mp3"></audio>
+            
+                <script>
+                    let botonhambre = document.querySelector(".reproductorhambre")
+                    let audioEtiquetahambre = document.querySelector("audio")
+    
+                     botonhambre.addEventListener("click", () => {
+                        audioEtiquetahambre.setAttribute("src", "./sonidos/hambre.mp3")
+                        audioEtiquetahambre.play()
+                    })
+                </script> 
+            </div>
+    
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/miedoso.png"><br>
+                
+               <center><button class="reproductormiedoso">Miedo</button></center> 
+                <audio src="./sonidos/miedo.mp3"></audio>
+            
+                <script>
+                    let botonmiedoso = document.querySelector(".reproductormiedoso")
+                    let audioEtiquetamiedoso = document.querySelector("audio")
+    
+                     botonmiedoso.addEventListener("click", () => {
+                        audioEtiquetamiedoso.setAttribute("src", "./sonidos/miedo.mp3")
+                        audioEtiquetamiedoso.play()
+                    })
+                </script> 
+            </div>
+    
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/divertido.png"><br>
+                
+                <center><button class="reproductordivertido">Divertido</button></center>
+                <audio src="./sonidos/divertido.mp3"></audio>
+            
+                <script>
+                    let botondivertido = document.querySelector(".reproductordivertido")
+                    let audioEtiquetadivertido = document.querySelector("audio")
+    
+                     botondivertido.addEventListener("click", () => {
+                        audioEtiquetadivertido.setAttribute("src", "./sonidos/divertido.mp3")
+                        audioEtiquetadivertido.play()
+                    })
+                </script> 
+            </div>
+    
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/malo.jpg"><br>
+                
+                <center><button class="reproductormalo">Malo</button></center>
+                <audio src="./sonidos/malo.mp3"></audio>
+            
+                <script>
+                    let botonmalo = document.querySelector(".reproductormalo")
+                    let audioEtiquetamalo = document.querySelector("audio")
+    
+                     botonmalo.addEventListener("click", () => {
+                        audioEtiquetamalo.setAttribute("src", "./sonidos/malo.mp3")
+                        audioEtiquetamalo.play()
+                    })
+                </script> 
+            </div>
+    
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/dolor.png"><br>
+                
+                <center><button class="reproductordolor">Dolor</button></center>
+                <audio src="./sonidos/dolor.mp3"></audio>
+            
+                <script>
+                    let botondolor = document.querySelector(".reproductordolor")
+                    let audioEtiquetadolor = document.querySelector("audio")
+    
+                     botondolor.addEventListener("click", () => {
+                        audioEtiquetadolor.setAttribute("src", "./sonidos/dolor.mp3")
+                        audioEtiquetadolor.play()
+                    })
+                </script> 
+            </div>
+    
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/risa.png"><br>
+                
+                <center><button class="reproductorrisa">Risa</button></center>
+                <audio src="./sonidos/risa.mp3"></audio>
+            
+                <script>
+                    let botonrisa = document.querySelector(".reproductorrisa")
+                    let audioEtiquetarisa = document.querySelector("audio")
+    
+                     botonrisa.addEventListener("click", () => {
+                        audioEtiquetarisa.setAttribute("src", "./sonidos/risa.mp3")
+                        audioEtiquetarisa.play()
+                    })
+                </script> 
+            </div>
+            </div>
+
+            <div>
+                <h5>.</h5>
+                <h2>Acciones</h2>   
+            </div>
+
+            <br><div class="galeria">
+        
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/abrir.jpg"><br>
+                
+                <center><button class="reproductorabrir">Abrir</button></center>
+                <audio src="./sonidos/abrir.mp3"></audio>
+            
+                <script>
+                    let botonabrir = document.querySelector(".reproductorabrir")
+                    let audioEtiquetaabrir = document.querySelector("audio")
+    
+                     botonabrir.addEventListener("click", () => {
+                        audioEtiquetaabrir.setAttribute("src", "./sonidos/abrir.mp3")
+                        audioEtiquetaabrir.play()
+                    })
+                </script> 
+            </div>
+    
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/cerrar.png"><br>
+                
+                <center><button class="reproductorcerrar">Cerrar</button></center>
+                <audio src="./sonidos/cerrar.mp3"></audio>
+            
+                <script>
+                    let botoncerrar = document.querySelector(".reproductorcerrar")
+                    let audioEtiquetacerrar = document.querySelector("audio")
+    
+                     botoncerrar.addEventListener("click", () => {
+                        audioEtiquetacerrar.setAttribute("src", "./sonidos/cerrar.mp3")
+                        audioEtiquetacerrar.play()
+                    })
+                </script> 
+            </div>
+    
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/dormir.jpg"><br>
+                
+                <center><button class="reproductordormir">Dormir</button></center>
+                <audio src="./sonidos/dormir.mp3"></audio>
+            
+                <script>
+                    let botondormir = document.querySelector(".reproductordormir")
+                    let audioEtiquetadormir = document.querySelector("audio")
+    
+                     botondormir.addEventListener("click", () => {
+                        audioEtiquetadormir.setAttribute("src", "./sonidos/dormir.mp3")
+                        audioEtiquetadormir.play()
+                    })
+                </script> 
+            </div>
+    
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/ayudar.jpg"><br>
+                
+                <center><button class="reproductorayudar">Ayudar</button></center>
+                <audio src="./sonidos/ayudar.mp3"></audio>
+            
+                <script>
+                    let botonayudar = document.querySelector(".reproductorayudar")
+                    let audioEtiquetaayudar = document.querySelector("audio")
+    
+                     botonayudar.addEventListener("click", () => {
+                        audioEtiquetaayudar.setAttribute("src", "./sonidos/ayudar.mp3")
+                        audioEtiquetaayudar.play()
+                    })
+                </script> 
+            </div>
+    
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/ganar.png"><br>
+                
+                <center><button class="reproductorganar">Ganar</button></center>
+                <audio src="./sonidos/ganar.mp3"></audio>
+            
+                <script>
+                    let botonganar = document.querySelector(".reproductorganar")
+                    let audioEtiquetaganar = document.querySelector("audio")
+    
+                     botonganar.addEventListener("click", () => {
+                        audioEtiquetaganar.setAttribute("src", "./sonidos/ganar.mp3")
+                        audioEtiquetaganar.play()
+                    })
+                </script> 
+            </div>
+    
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/correr.jpg"><br>
+                
+                <center><button class="reproductorcorrer">Correr</button></center>
+                <audio src="./sonidos/correr.mp3"></audio>
+            
+                <script>
+                    let botoncorrer = document.querySelector(".reproductorcorrer")
+                    let audioEtiquetacorrer = document.querySelector("audio")
+    
+                     botoncorrer.addEventListener("click", () => {
+                        audioEtiquetacorrer.setAttribute("src", "./sonidos/correr.mp3")
+                        audioEtiquetacorrer.play()
+                    })
+                </script> 
+            </div>
+    
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/aprender.jpg"><br>
+               
+                <center><button class="reproductoraprender">Aprender</button></center>
+                <audio src="./sonidos/aprender.mp3"></audio>
+            
+                <script>
+                    let botonaprender = document.querySelector(".reproductoraprender")
+                    let audioEtiquetaaprender = document.querySelector("audio")
+    
+                     botonaprender.addEventListener("click", () => {
+                        audioEtiquetaaprender.setAttribute("src", "./sonidos/aprender.mp3")
+                        audioEtiquetaaprender.play()
+                    })
+                </script> 
+            </div>
+    
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/comer.png"><br>
+                
+                <center> <button class="reproductorcomer">Comer</button></center>
+                <audio src="./sonidos/comer.mp3"></audio>
+            
+                <script>
+                    let botoncomer = document.querySelector(".reproductorcomer")
+                    let audioEtiquetacomer = document.querySelector("audio")
+    
+                     botoncomer.addEventListener("click", () => {
+                        audioEtiquetacomer.setAttribute("src", "./sonidos/comer.mp3")
+                        audioEtiquetacomer.play()
+                    })
+                </script> 
+            </div>
+            </div>
+
+            <div>
+                <h5>.</h5>
+                <h2>Emergencias</h2>   
+            </div>
+
+            <br><div class="galeria">
+      
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/ambulancia.jpg"><br>
+               
+                <center><button class="reproductorV">Ambulancia</button></center>
+                <audio src="./sonidos/LetraV.mp3"></audio>
+            
+                <script>
+                    let botonV = document.querySelector(".reproductorV")
+                    let audioEtiquetaV = document.querySelector("audio")
+    
+                     botonV.addEventListener("click", () => {
+                        audioEtiquetaV.setAttribute("src", "./sonidos/LetraV.mp3")
+                        audioEtiquetaV.play()
+                    })
+                </script> 
+            </div>
+    
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/bombero.png"><br>
+                
+                <center><button class="reproductorW">Bombero</button></center>
+                <audio src="./sonidos/LetraW.mp3"></audio>
+            
+                <script>
+                    let botonW = document.querySelector(".reproductorW")
+                    let audioEtiquetaW = document.querySelector("audio")
+    
+                     botonW.addEventListener("click", () => {
+                        audioEtiquetaW.setAttribute("src", "./sonidos/LetraW.mp3")
+                        audioEtiquetaW.play()
+                    })
+                </script> 
+            </div>
+    
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/dentista.png"><br>
+                
+                <center><button class="reproductorX">Dentista</button></center>
+                <audio src="./sonidos/LetraX.mp3"></audio>
+            
+                <script>
+                    let botonX = document.querySelector(".reproductorX")
+                    let audioEtiquetaX = document.querySelector("audio")
+    
+                     botonX.addEventListener("click", () => {
+                        audioEtiquetaX.setAttribute("src", "./sonidos/LetraX.mp3")
+                        audioEtiquetaX.play()
+                    })
+                </script> 
+            </div>
+    
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/doctora.png"><br>
+                
+                <center><button class="reproductorY">Doctora</button></center>
+                <audio src="./sonidos/LetraY.mp3"></audio>
+            
+                <script>
+                    let botonY = document.querySelector(".reproductorY")
+                    let audioEtiquetaY = document.querySelector("audio")
+    
+                     botonY.addEventListener("click", () => {
+                        audioEtiquetaY.setAttribute("src", "./sonidos/LetraY.mp3")
+                        audioEtiquetaY.play()
+                    })
+                </script> 
+            </div>
+    
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/policia.jpg"><br>
+                
+                <center><button class="reproductorZ">Policia</button></center>
+                <audio src="./sonidos/LetraZ.mp3"></audio>
+            
+                <script>
+                    let botonZ = document.querySelector(".reproductorZ")
+                    let audioEtiquetaZ = document.querySelector("audio")
+    
+                     botonZ.addEventListener("click", () => {
+                        audioEtiquetaZ.setAttribute("src", "./sonidos/LetraZ.mp3")
+                        audioEtiquetaZ.play()
+                    })
+                </script> 
+            </div>
+
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/fiebre.jpg"><br>
+                
+                <center><button class="reproductorZ">Fiebre</button></center>
+                <audio src="./sonidos/LetraZ.mp3"></audio>
+            
+                <script>
+                    // let boton = document.querySelector(".reproductorZ")
+                    // let audioEtiqueta = document.querySelector("audio")
+    
+                     botonZ.addEventListener("click", () => {
+                        audioEtiquetaZ.setAttribute("src", "./sonidos/LetraZ.mp3")
+                        audioEtiquetaZ.play()
+                    })
+                </script> 
+            </div>
+
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/malestar.jpg"><br>
+                
+                <center><button class="reproductorZ">Malestar</button></center>
+                <audio src="./sonidos/LetraZ.mp3"></audio>
+            
+                <script>
+                    // let boton = document.querySelector(".reproductorZ")
+                    // let audioEtiqueta = document.querySelector("audio")
+    
+                     botonZ.addEventListener("click", () => {
+                        audioEtiquetaZ.setAttribute("src", "./sonidos/LetraZ.mp3")
+                        audioEtiquetaZ.play()
+                    })
+                </script> 
+            </div>
+
+            <div class="imagenes">
+                <img src="../HablaConmigo/img/emergencia.jpg"><br>
+                
+                <center><button class="reproductorZ">Salida de Emergencia</button></center>
+                <audio src="./sonidos/LetraZ.mp3"></audio>
+            
+                <script>
+                    // let boton = document.querySelector(".reproductorZ")
+                    // let audioEtiqueta = document.querySelector("audio")
+    
+                     botonZ.addEventListener("click", () => {
+                        audioEtiquetaZ.setAttribute("src", "./sonidos/LetraZ.mp3")
+                        audioEtiquetaZ.play()
+                    })
+                </script> 
+            </div>
+         </div>
+
+         <div>
+            <h5>.</h5>
+            <h2>Lugares</h2>   
+        </div>
+
+        <br><div class="galeria">
+  
+        <div class="imagenes">
+            <img src="../HablaConmigo/img/casa.png"><br>
+           
+            <center><button class="reproductorV">Casa</button></center>
+            <audio src="./sonidos/LetraV.mp3"></audio>
+        
+            <script>
+                // let botonV = document.querySelector(".reproductorV")
+                // let audioEtiquetaV = document.querySelector("audio")
+
+                 botonV.addEventListener("click", () => {
+                    audioEtiquetaV.setAttribute("src", "./sonidos/LetraV.mp3")
+                    audioEtiquetaV.play()
+                })
+            </script> 
+        </div>
+
+        <div class="imagenes">
+            <img src="../HablaConmigo/img/cocina.jpg"><br>
+            
+            <center><button class="reproductorW">Cocina</button></center>
+            <audio src="./sonidos/LetraW.mp3"></audio>
+        
+            <script>
+                // let botonW = document.querySelector(".reproductorW")
+                // let audioEtiquetaW = document.querySelector("audio")
+
+                 botonW.addEventListener("click", () => {
+                    audioEtiquetaW.setAttribute("src", "./sonidos/LetraW.mp3")
+                    audioEtiquetaW.play()
+                })
+            </script> 
+        </div>
+
+        <div class="imagenes">
+            <img src="../HablaConmigo/img/bano.png"><br>
+            
+            <center><button class="reproductorX">Baño</button></center>
+            <audio src="./sonidos/LetraX.mp3"></audio>
+        
+            <script>
+                // let botonX = document.querySelector(".reproductorX")
+                // let audioEtiquetaX = document.querySelector("audio")
+
+                 botonX.addEventListener("click", () => {
+                    audioEtiquetaX.setAttribute("src", "./sonidos/LetraX.mp3")
+                    audioEtiquetaX.play()
+                })
+            </script> 
+        </div>
+
+        <div class="imagenes">
+            <img src="../HablaConmigo/img/calle.jpg"><br>
+            
+            <center><button class="reproductorY">Calle</button></center>
+            <audio src="./sonidos/LetraY.mp3"></audio>
+        
+            <script>
+                // let botonY = document.querySelector(".reproductorY")
+                // let audioEtiquetaY = document.querySelector("audio")
+
+                 botonY.addEventListener("click", () => {
+                    audioEtiquetaY.setAttribute("src", "./sonidos/LetraY.mp3")
+                    audioEtiquetaY.play()
+                })
+            </script> 
+        </div>
+
+        <div class="imagenes">
+            <img src="../HablaConmigo/img/escuela.png"><br>
+            
+            <center><button class="reproductorZ">Escuela</button></center>
+            <audio src="./sonidos/LetraZ.mp3"></audio>
+        
+            <script>
+                // let botonZ = document.querySelector(".reproductorZ")
+                // let audioEtiquetaZ = document.querySelector("audio")
+
+                 botonZ.addEventListener("click", () => {
+                    audioEtiquetaZ.setAttribute("src", "./sonidos/LetraZ.mp3")
+                    audioEtiquetaZ.play()
+                })
+            </script> 
+        </div>
+
+        <div class="imagenes">
+            <img src="../HablaConmigo/img/hospital.jpg"><br>
+            
+            <center><button class="reproductorZ">Hospital</button></center>
+            <audio src="./sonidos/LetraZ.mp3"></audio>
+        
+            <script>
+                // let boton = document.querySelector(".reproductorZ")
+                // let audioEtiqueta = document.querySelector("audio")
+
+                 botonZ.addEventListener("click", () => {
+                    audioEtiquetaZ.setAttribute("src", "./sonidos/LetraZ.mp3")
+                    audioEtiquetaZ.play()
+                })
+            </script> 
+        </div>
+
+        <div class="imagenes">
+            <img src="../HablaConmigo/img/jugueteria.png"><br>
+            
+            <center><button class="reproductorZ">Jugueteria</button></center>
+            <audio src="./sonidos/LetraZ.mp3"></audio>
+        
+            <script>
+                // let boton = document.querySelector(".reproductorZ")
+                // let audioEtiqueta = document.querySelector("audio")
+
+                 botonZ.addEventListener("click", () => {
+                    audioEtiquetaZ.setAttribute("src", "./sonidos/LetraZ.mp3")
+                    audioEtiquetaZ.play()
+                })
+            </script> 
+        </div>
+
+        <div class="imagenes">
+            <img src="../HablaConmigo/img/panaderia.png"><br>
+            
+            <center><button class="reproductorZ">Panaderia</button></center>
+            <audio src="./sonidos/LetraZ.mp3"></audio>
+        
+            <script>
+                // let boton = document.querySelector(".reproductorZ")
+                // let audioEtiqueta = document.querySelector("audio")
+
+                 botonZ.addEventListener("click", () => {
+                    audioEtiquetaZ.setAttribute("src", "./sonidos/LetraZ.mp3")
+                    audioEtiquetaZ.play()
+                })
+            </script> 
+        </div>
+     </div>
+        </div>
+         
+    
+        </main>
+    
+        <script src="js/script.js"></script>
+    </body>
+    </html>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
